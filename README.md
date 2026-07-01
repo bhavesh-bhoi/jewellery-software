@@ -1,16 +1,59 @@
-# React + Vite
+# JewelVault ERP – Jewellery Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
 
-Currently, two official plugins are available:
+JewelVault ERP is a complete jewellery management system with **dual‑environment** (White / Black) support, unified login, profile with password change, interactive charts, and custom UI components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+- **Unified Login** – one page for all users; environment determined by username.
+- **Black Data Wipe** – any black login attempt (even with wrong password) silently wipes all black transactions.
+- **Profile Dropdown** – change password and sign out from the navbar.
+- **Interactive Charts** – line, bar, area, and pie charts with time‑range selectors.
+- **Custom Selects & Date Picker** – consistent, branded form controls.
+- **Toaster Notifications** – success/error messages for all actions.
+- **Hidden Scrollbars** – clean UI on modals and dropdowns.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 19, Vite, Tailwind CSS, React Router, Recharts, Lucide Icons.
+- **Backend**: Node.js, Express, MongoDB (Mongoose), JWT, bcrypt.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚦 Getting Started
+
+1. Install dependencies: `npm install`
+1. Seed the database: `npm run seed`
+1. Start backend: `npm run server`
+1. Start frontend: `npm run dev`
+
+**Default Credentials**
+
+- White: `admin` / `admin@2026`, `manager` / `manager@2026`, `employee` / `employee@2026`
+- Black: `blackadmin` / `black@2026`
+
+## 📁 Project Structure
+
+```
+├── server/               # Backend (Express + MongoDB)
+│   ├── config/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── index.js
+│   └── seed.js
+├── src/                  # Frontend (React + Vite)
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── lib/
+│   ├── providers/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── package.json
+└── ...
+```
+
+## 📄 License
+
+Proprietary – all rights reserved.
